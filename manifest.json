@@ -1,0 +1,17 @@
+{
+  "name":           "New domains alerter",
+  "version":        "0.0.1",
+  "description":    "Alert on newly registered domains by http://omer.cohen.io",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "options_page": "options.html",
+  "permissions":    [
+    "webNavigation",
+    "storage",
+    "http://whois.apitruck.com/*",
+    "notifications" 
+  ],
+  "manifest_version": 2
+}
